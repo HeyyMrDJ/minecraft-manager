@@ -1,0 +1,18 @@
+{{ define "content" }}
+    <div class="centered-card">
+        <div class="card">
+            <h1>Pardon Player</h1>
+            
+            <form action="/unban" method="POST">
+                <label for="unban">Name (eg. yt)</label>
+                <select name="unban" id="unban" class="select-dropdown">
+                    {{range $key:= .}}
+                    <option value="{{$key}}">{{$key}}</option>
+                    {{end}}
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+{{ end }}

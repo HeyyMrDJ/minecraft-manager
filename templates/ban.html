@@ -1,0 +1,18 @@
+{{ define "content" }}
+    <div class="centered-card">
+        <div class="card">
+            <h1>Ban Player</h1>
+            
+            <form action="/ban" method="POST">
+                <label for="ban">Name (eg. yt)</label>
+                <select name="ban" id="ban" class="select-dropdown">
+                    {{range $key:= .}}
+                    <option value="{{$key}}">{{$key}}</option>
+                    {{end}}
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+{{ end }}

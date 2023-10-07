@@ -1,6 +1,10 @@
 {{ define "content" }}
 <h1> USERS </h1>
+{{ if . }}
     {{ range . }}
     <p> {{ . }} </p>
     {{ end }}
+{{ else }}
+    No users found
+{{ end }}
 {{ end }}
