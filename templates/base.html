@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Manager</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Minecraft Manager</h1>
+    </div>
+    <nav class="navbar">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/create">Users</a>
+        <a class="nav-link" href="/update">Ban</a>
+        <a class="nav-link" href="/shout">Shout</a>
+    </nav>
+        {{ template "content"  . }}
+
+</body>
+</html>

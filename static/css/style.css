@@ -1,0 +1,77 @@
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+    background-color: #000;
+    color: #fff; /* White text */
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #222; /* Darker background */
+    padding: 10px;
+    text-align: left;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #0074d9; /* Bright blue link color */
+    margin: 0; /* Remove top and bottom margin */
+    /*display: block; /* Make the links block-level elements */
+    padding: 10px; /* Add padding to control the link's height */
+}
+
+.nav-link:hover {
+    background-color: #111111;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+p {
+    background-color:darkblue ;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+    margin: 30px;
+    padding-top: 10px;
+}
+
+.card {
+    background-color: #222; /* Darker background */
+    border: 2px solid #444;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 20%;
+    opacity: .8;
+}
+
+.card-header {
+    color: #fff; /* White text for card header */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-text {
+    color: #bbb; /* Lighter text color for card content */
+    overflow: hidden;
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+    background-color: #111111
+}

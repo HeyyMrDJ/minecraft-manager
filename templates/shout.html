@@ -1,0 +1,14 @@
+{{ define "content" }}
+    <div class="centered-card">
+        <div class="card">
+            <h1>SHOUT IT OUT</h1>
+            
+            <form action="/shout" method="POST">
+                <label for="shout">What to shout (eg. Ben Noob)</label>
+                <input type="text" name="shout" id="shout" required>
+                <button type="submit">SHOUT</button>
+            </form>
+            
+        </div>
+    </div>
+{{ end }}
